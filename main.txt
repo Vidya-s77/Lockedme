@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner input = new Scanner (System.in);  
+
+	      String username;
+	      String password;
+          String newuser;
+          String newpass;
+
+	      System.out.println("Welcome to your Lockedme.com!"); 
+	      System.out.println("\n Enter to Login or Register");
+	      System.out.println("\nEnter your username and password to login to your account.");    
+
+	      System.out.println("Username: ");
+	        username = input.nextLine();
+
+	      System.out.println("Password: ");
+	        password = input.nextLine();
+
+	        UserAccount login = new UserAccount(username, password);
+
+	        if(login.checkPassword())
+	            System.out.println("You are logged in!");
+	        
+	        else
+	            {
+	        System.out.println("The username and password you entered are incorrect. Please Register for new account");
+	        	
+	        System.out.println("Enter your new Username:");
+	        newuser=input.nextLine();
+	        
+	        System.out.println("Enter new password:");
+	         newpass=input.nextLine();        
+	        
+	         System.out.println("You have sucessfully created new account");}
+	        
+	        
+      }
+
+}

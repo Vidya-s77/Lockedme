@@ -1,0 +1,41 @@
+public class UserAccount {
+
+	private String username;
+    private String password;
+    private String[][] accounts = {{"anagha", "supernova"},{"vidya","bnbnb"},{"italy","rome"}};
+   
+
+    public UserAccount(String username, String password) 
+    {
+        this.username = username;
+        this.password = password;
+       // boolean active;
+    }
+
+    public boolean checkPassword()
+    
+    {
+           
+          
+        if((username.equals(accounts[0][0])) && (password.equals(accounts[0][1])))
+        	return true;
+        
+        	if((username.equals(accounts[1][0]))&&(password.equals(accounts[1][1])))
+        		return true;
+           
+        		if((username.equals(accounts[2][0]))&&(password.equals(accounts[2][1])))	
+        		return true;
+            
+        else
+        	
+            return false;
+    }
+
+   public void deactivateAccount()
+    {
+       boolean active = false;
+    
+	
+	
+}
+}
